@@ -1,0 +1,23 @@
+.site-container {
+  @include container-fixed;
+
+  @media (min-width: $screen-sm-min) {
+    width: $container-sm;
+  }
+  @media (min-width: $screen-md-min) {
+    width: $container-md;
+  }
+  @media (min-width: $screen-lg-min) {
+    width: $container-lg;
+  }
+}
+
+.wrap,
+.content-sidebar-wrap {
+  @include make-row;
+}
+
+body {
+  background: #252626;
+  color: #dcdcdc;
+}
